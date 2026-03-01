@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Anton&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Anton", sans-serif;
+
+  --color-spotify-green: #1DB954;
+  --color-spotify-black: #191414;
+}
+
+body {
+  @apply bg-zinc-950 text-zinc-100 font-sans antialiased;
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-xl border border-white/10;
+}
+
+.brutal-border {
+  @apply border-2 border-zinc-100 shadow-[4px_4px_0px_0px_rgba(255,255,255,1)];
+}
